@@ -7,7 +7,8 @@
 		"node": "20.x",
 		"npm": ">=7.0.0"
 	},
-	"dependencies": {```json
+	"dependencies": {
+
 "canvas": "^2.11.2",
 ```
 		"@distube/ytdl-core": "^4.13.3",

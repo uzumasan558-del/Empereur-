@@ -7,7 +7,9 @@
 		"node": "20.x",
 		"npm": ">=7.0.0"
 	},
-	"dependencies": {
+	"dependencies": {```json
+"canvas": "^2.11.2",
+```
 		"@distube/ytdl-core": "^4.13.3",
 		"axios": "^1.4.0",
 		"bcrypt": "^5.0.1",

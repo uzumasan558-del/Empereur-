@@ -91,7 +91,7 @@ module.exports = {
         body += `🤖 𝐀𝐈 𝐒𝐮𝐠𝐠𝐞𝐬𝐭: .help -ai <command>\n`;
 
         const res = await message.reply({ body, attachment: await global.utils.getStreamFromURL(avatar)});
-        return autoDelete(res.messageID);
+        //return autoDelete(res.messageID);
       }
 
       // --- Command Info ---
@@ -99,7 +99,7 @@ module.exports = {
       const command = commands.get(query) || commands.get(aliases.get(query));
       if(!command) {
         const res = await message.reply({ body:`❌ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 "${query}" 𝐧𝐨𝐭 𝐟𝐨𝐮𝐧𝐝.`, attachment: await global.utils.getStreamFromURL(avatar)});
-        return autoDelete(res.messageID);
+        //return autoDelete(res.messageID);
       }
 
       const cfg = command.config || {};
@@ -120,7 +120,7 @@ module.exports = {
       ].join("\n");
 
       const res = await message.reply({ body: card, attachment: await global.utils.getStreamFromURL(avatar)});
-      return autoDelete(res.messageID);
+      //return autoDelete(res.messageID);
 
     } catch(err) {
       console.error("HELP CMD ERROR:", err);

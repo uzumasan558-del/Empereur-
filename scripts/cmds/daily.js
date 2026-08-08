@@ -1,5 +1,4 @@
 const moment = require("moment-timezone");
-
 module.exports = {
 	config: {
 		name: "daily",
